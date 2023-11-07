@@ -4,12 +4,14 @@ import './index.css'
 import { useState } from 'react';
 
 
-
-
 const Home = () => {
+
+
+    const [data, setData] = useState ([])
+
     return <div>
-        <Edit/>
-        <List/>
+        <Edit add = {setData}/>
+        <List listData = {data}/>
     </div>
 }
 
